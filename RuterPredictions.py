@@ -13,8 +13,16 @@ data['Year'] = data['Dato'].dt.year
 data['Month'] = data['Dato'].dt.month
 data['Day'] = data['Dato'].dt.day
 
+# Remove outliers based on IQR for 'Passasjerer_Ombord'
+Q1 = data['Passasjerer_Ombord'].quantile(0.25)
+Q3 = data['Passasjerer_Ombord'].quantile(0.75)
+IQR = Q3 - Q1
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+filtered_data = data[(data['Passasjerer_Ombord'] >= lower_bound) & (data['Passasjerer_Ombord'] <= upper_bound)]
+
 # Select a specific bus for prediction, for this example let's choose "Linjenavn" value '100'
-bus_data = data[data['Linjenavn'] == '100']
+bus_data = filtered_data[filtered_data['Linjenavn'] == '100']
 
 # Features and target
 X = bus_data[['Year', 'Month', 'Day']]
@@ -43,6 +51,6 @@ def predict_passengers(date):
     return int(predicted_value[0])
 
 # Test the prediction function
-input_date = "2022-07-01"
+input_date = "2022-07-12"
 predicted_passengers = predict_passengers(input_date)
 print(f"Predicted number of passengers on {input_date}: {predicted_passengers}")
