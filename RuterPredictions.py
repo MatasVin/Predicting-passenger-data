@@ -21,7 +21,7 @@ lower_bound = Q1 - 1.5 * IQR
 upper_bound = Q3 + 1.5 * IQR
 filtered_data = data[(data['Passasjerer_Ombord'] >= lower_bound) & (data['Passasjerer_Ombord'] <= upper_bound)]
 
-# Select a specific bus for prediction, for this example let's choose "Linjenavn" value '100'
+# Select a specific bus for prediction, let's choose "Linjenavn" value '100'
 bus_data = filtered_data[filtered_data['Linjenavn'] == '100']
 
 # Features and target
