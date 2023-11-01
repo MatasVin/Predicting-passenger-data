@@ -1,3 +1,5 @@
+![A bus in Japan :)](https://media.timeout.com/images/105870640/750/422/image.jpg)
+
 # Assignment 2: Machine learning
 Predicting passenger data using machine learning for the course DAVE3625.
 
