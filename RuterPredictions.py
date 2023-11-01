@@ -8,7 +8,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 
 # Load data
-data = pd.read_csv("Ruter_data.csv", sep=";")
+url = "https://github.com/MatasVin/Predicting-passenger-data/blob/main/Ruter_data.csv"
+data = pd.read_csv(url, sep=";")
 
 # Convert Dato to datetime and extract day, month, year
 data['Dato'] = pd.to_datetime(data['Dato'], dayfirst=True)
