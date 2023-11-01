@@ -16,6 +16,9 @@ Since our assignment is to  predict the number of passangers on a spesific date 
 
 Utilising classification algorithm would also be unbenefitial as our desired output/situation is not of the binary- nor classification sort.
 
+
+
+
 source:\
 MachineLearning-p2.pptx\
 MachineLearning-p3.pptx
