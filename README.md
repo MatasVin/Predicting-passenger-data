@@ -1,7 +1,7 @@
 ![A bus in Japan :)](https://media.timeout.com/images/105870640/750/422/image.jpg)
 
 # Assignment 2: Machine learning
-Predicting passenger data using machine learning for the course DAVE3625.
+Predicting passenger number on a spesific bus using data samples for machine learning in regards of the course DAVE3625.
 
 ## Research of algorithms
 **Classification:**\
