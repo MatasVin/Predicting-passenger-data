@@ -4,8 +4,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 
-
 #Yes, we also like to sort imports based on length :)
+
 
 # Load data
 data = pd.read_csv("Ruter_data.csv", sep=";")
