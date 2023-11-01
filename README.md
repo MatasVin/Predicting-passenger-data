@@ -9,7 +9,7 @@ This type of machine learning algorithm seems to favour binary data such as yes/
 Regression models are commonly used to predict a continuas value,time series modeling, and determining the causal effect between variables. This type of algorithm ustilises variables of continious nature or real value.
 
 ### The prefered algorithm
-Since our assignment is to  predict the number of passangers on a spesific date for a spesific bus route, therefore is regression the most suitable for our machine learning algorithm as it gives us a predicted output that best correlates to the given input/data.
+Since our assignment is to  predict the number of passangers on a spesific date for a spesific bus route, therefore is regression the most suitable for our machine learning algorithm as it gives us a predicted output that best correlates to the given input/data - which is again a typical example of a regression problem.
 
 Utilising classification algorithm would also be unbenefitial as our desired output/situation is not of the binary- nor classification sort.
 
