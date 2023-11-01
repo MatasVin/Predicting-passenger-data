@@ -12,3 +12,7 @@ Regression models are commonly used to predict a continuas value,time series mod
 Since our assignment is to  predict the number of passangers on a spesific date for a spesific bus route, therefore is regression the most suitable for our machine learning algorithm as it gives us a predicted output that best correlates to the given input/data.
 
 Utilising classification algorithm would also be unbenefitial as our desired output/situation is not of the binary- nor classification sort.
+
+source:\
+MachineLearning-p2.pptx
+MachineLearning-p3.pptx
